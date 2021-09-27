@@ -17,4 +17,6 @@ int main() {
     else cout << "W tekście nie występuje słowo dom";
 
     cout << endl;
+
+    return(0);
 }
