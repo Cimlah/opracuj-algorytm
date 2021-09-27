@@ -89,3 +89,52 @@ Na końcu programu wyświetlam rezultaty:
 cout << "Ilość wielkich liter: " << licznik_wielkich_liter << endl;
 cout << "Ilość małych liter: " << licznik_malych_liter << endl;
 ```
+
+# Zadanie 4
+
+``` c++
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    string text;
+    int wielkie_litery=0, male_litery=0, cyfry=0, znaki_specjalne=0, spacje=0, ilosc_znakow=0;
+
+    cout << "Wprowadź jakiś tekst: ";
+    getline(cin, text);
+
+    for(int i=0; i<text.length(); i++) {
+        if(text[i]>='A' && text[i]<='Z') wielkie_litery++;
+            else if(text[i]>='a' && text[i]<='z') male_litery++;
+            else if(text[i]>='0' && text[i]<='9') cyfry++;
+            else if(text[i]==' ') spacje++;
+        else znaki_specjalne++;
+
+        ilosc_znakow++;
+    }
+
+    cout << "Ilość wielkich liter: " << wielkie_litery << endl;
+    cout << "Ilość małych liter: " << male_litery << endl;
+    cout << "Ilość cyfr: " << cyfry << endl;
+    cout << "Ilość znaków specjalnych: " << znaki_specjalne << endl;
+    cout << "Ilość spacji: " << spacje << endl;
+    cout << "Ilość wszystkich znaków: " << ilosc_znakow << endl;
+    cout << endl;
+
+    if(wielkie_litery==0) cout << "Brakuje wielkich liter" << endl;
+    if(male_litery==0) cout << "Brakuje małych liter" << endl;
+    if(cyfry==0) cout << "Brakuje cyfr" << endl;
+    if(znaki_specjalne==0) cout << "Brakuje znaków specjalnych" << endl;
+    if(spacje==0) cout << "Brakuje spacji" << endl;
+    if(ilosc_znakow<8) cout << "Za krótkie hasło" << endl;
+
+    cout << endl;
+
+    return(0);
+}
+```
+
+Zadanie polega na stwierdzeniu przez program czy wprowadzony przez użytkownika tekst jest bezpiecznym hasłem.  
+Tak właściwie, jest to połączenie poprzednich zadań z dodatkowymi rzeczami.  
+W pętli są warunki sprawdzające czy element tekstu jest wielką lub małą literą, cyfrą, spacją. Na końcu jest jeszcze: `else znaki_specjalne++;`, który sprawdza czy element jest znakiem specjalnym. Dlaczego `else`, a nie kolejny `else if`? Dlatego, że logicznie, jeżeli już sprawdziłem wszystkie inne typy znaków, to musiały zostać same znaki specjalne.
