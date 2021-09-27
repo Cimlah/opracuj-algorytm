@@ -2,6 +2,10 @@
 
 To repozytorium służy do nauki języka C++ (w przyszłości możliwe, że HTML). Zawiera ono objaśnienia, analizy kodu, ćwiczenia oraz skrypty i opisy ułatwiające naukę.
 
+# Spis branchów
+
+1. [c++](https://github.com/Cimlah/programowanie-lab/tree/c++)
+
 # Zasady współtworzenia
 - Wszelka treść z wyjątkiem bezpośredniego kodu, nazw plików czy katalogów powinna być tworzona w języku polskim. Dozwolone są zrozumiałe informatyczne anglojęzyczne wyrażenia i zwroty.
 
