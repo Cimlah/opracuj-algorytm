@@ -16,4 +16,6 @@ int main() {
 
     cout << "Ilość wielkich liter: " << licznik_wielkich_liter << endl;
     cout << "Ilość małych liter: " << licznik_malych_liter << endl;
+
+    return(0);
 }
