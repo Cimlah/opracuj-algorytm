@@ -138,3 +138,33 @@ int main() {
 Zadanie polega na stwierdzeniu przez program czy wprowadzony przez użytkownika tekst jest bezpiecznym hasłem.  
 Tak właściwie, jest to połączenie poprzednich zadań z dodatkowymi rzeczami.  
 W pętli są warunki sprawdzające czy element tekstu jest wielką lub małą literą, cyfrą, spacją. Na końcu jest jeszcze: `else znaki_specjalne++;`, który sprawdza czy element jest znakiem specjalnym. Dlaczego `else`, a nie kolejny `else if`? Dlatego, że logicznie, jeżeli już sprawdziłem wszystkie inne typy znaków, to musiały zostać same znaki specjalne.
+
+# Zadanie 5
+
+``` c++
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    string text;
+    int czy_dom=0;
+    
+    cout << "Wprowadź jakiś tekst: ";
+    getline(cin, text);
+
+    for(int i=0; i<text.length(); i++) {
+        if(text[i]=='d' && text[i+1]=='o' && text[i+2]=='m') czy_dom++;
+    }
+
+    if(czy_dom>0) cout << "W tekście występuje słowo dom";
+    else cout << "W tekście nie występuje słowo dom";
+
+    cout << endl;
+
+    return(0);
+}
+```
+
+Zadanie polega na stwierdzeniu przez program czy wprowadzony przez użytkownika tekst zawiera w sobie słowo *dom*.  
+W pętli znajduje się warunek: `if(text[i]=='d' && text[i+1]=='o' && text[i+2]=='m')`, sprawdza on kolejno, czy obecny element ma wartość *d*, następny (stąd i+1) *o* i kolejny *m* (stąd i+2), zwiększa licznik o jeden jeżeli ciąg takich znaków występuje. Jeżeli licznik jest większy od *0*, to program wyświetla, że w tekście występuje słowo *dom*.
