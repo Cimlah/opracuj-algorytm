@@ -167,4 +167,4 @@ int main() {
 ```
 
 Zadanie polega na stwierdzeniu przez program czy wprowadzony przez użytkownika tekst zawiera w sobie słowo *dom*.  
-W pętli znajduje się warunek: `if(text[i]=='d' && text[i+1]=='o' && text[i+2]=='m')`, sprawdza on kolejno, czy obecny element ma wartość *d*, następny (stąd i+1) *o* i kolejny *m* (stąd i+2), zwiększa licznik o jeden jeżeli ciąg takich znaków występuje. Jeżeli licznik jest większy od *0*, to program wyświetla, że w tekście występuje słowo *dom*.
+W pętli znajduje się warunek: `if(text[i]=='d' && text[i+1]=='o' && text[i+2]=='m')`, sprawdza on kolejno, czy obecny element (`i`) ma wartość *d*, następny (stąd `i+1`) *o* i kolejny *m* (stąd `i+2`), zwiększa licznik o jeden jeżeli ciąg takich znaków występuje. Jeżeli licznik jest większy od *0*, to program wyświetla, że w tekście występuje słowo *dom*.
