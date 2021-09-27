@@ -1,2 +1,5 @@
 .vscode
 .DS_Store
+
+# Wykluczenie skompilowanych plików wykonywalnych w projekcie '001'
+001/*/z?
