@@ -168,3 +168,39 @@ int main() {
 
 Zadanie polega na stwierdzeniu przez program czy wprowadzony przez użytkownika tekst zawiera w sobie słowo *dom*.  
 W pętli znajduje się warunek: `if(text[i]=='d' && text[i+1]=='o' && text[i+2]=='m')`, sprawdza on kolejno, czy obecny element (`i`) ma wartość *d*, następny (stąd `i+1`) *o* i kolejny *m* (stąd `i+2`), zwiększa licznik o jeden jeżeli ciąg takich znaków występuje. Jeżeli licznik jest większy od *0*, to program wyświetla, że w tekście występuje słowo *dom*.
+
+# Zadanie 6
+
+``` c++
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    string text;
+    int temp, czy_palindrom=0;
+
+    cout << "Wprowadź jakiś tekst: ";
+    getline(cin, text);
+
+    temp=text.length()-1;
+
+    for(int i=0; i<text.length(); i++) {
+        if(text[i]==text[temp]) czy_palindrom++;
+
+        temp--;
+    }
+
+    if(czy_palindrom==text.length()) cout << "Słowo jest palindromem";
+    else cout << "Słowo nie jest palindromem";
+
+    cout << endl;
+
+    return(0);
+}
+```
+
+Zadanie polega na stwierdzeniu przez program czy wprowadzony przez użytkownika tekst jest palindromem.  
+Ustalam zmienną `temp`, która będzie się równała długości tekstu minus jeden. Dlaczego minus jeden? Bo to się później przyda w pętli do porównywania, a wiadomo, że indeksuje się elementy od zera.  
+`if(text[i]==text[temp]) czy_palindrom++;` jeżeli pierwszy element jest równy ostatniemu, to zwiększ licznik o jeden. W następnym cyklu pętli `i` zostanie zwiększone o jeden, a `temp` zmniejszone o jeden. Dla przykładu weźmy sobie słowo *kaczka*. W pierwszym cyklu pętli zostaną porównane litery: *k* i *a*, w następnym *a* i *k*, w ostatnim *c* i *z*. Niestety żadna z tych wartości nie jest sobie równa.  
+Wiadomo, że słowo *kajak* jest palindromem, pętla sprawdzi to słowo, na końcu wartość zmiennej `czy_palindrom` powinna wynieść *5*, a skoro *5* również jest długością tego słowa, to takie słowo na pewno jest palindromem.
