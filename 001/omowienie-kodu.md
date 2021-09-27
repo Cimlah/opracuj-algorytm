@@ -202,5 +202,5 @@ int main() {
 
 Zadanie polega na stwierdzeniu przez program czy wprowadzony przez użytkownika tekst jest palindromem.  
 Ustalam zmienną `temp`, która będzie się równała długości tekstu minus jeden. Dlaczego minus jeden? Bo to się później przyda w pętli do porównywania, a wiadomo, że indeksuje się elementy od zera.  
-`if(text[i]==text[temp]) czy_palindrom++;` jeżeli pierwszy element jest równy ostatniemu, to zwiększ licznik o jeden. W następnym cyklu pętli `i` zostanie zwiększone o jeden, a `temp` zmniejszone o jeden. Dla przykładu weźmy sobie słowo *kaczka*. W pierwszym cyklu pętli zostaną porównane litery: *k* i *a*, w następnym *a* i *k*, w ostatnim *c* i *z*. Niestety żadna z tych wartości nie jest sobie równa.  
+`if(text[i]==text[temp]) czy_palindrom++;` jeżeli pierwszy element jest równy ostatniemu, to zwiększ licznik o jeden. W następnym cyklu pętli `i` zostanie zwiększone o jeden, a `temp` zmniejszone o jeden. Dla przykładu weźmy sobie słowo *kaczka*. W pierwszym cyklu pętli zostaną porównane litery: *k* i *a*, w następnym *a* i *k*, w następnym *c* i *z*. Niestety żadna z tych wartości nie jest sobie równa.  
 Wiadomo, że słowo *kajak* jest palindromem, pętla sprawdzi to słowo, na końcu wartość zmiennej `czy_palindrom` powinna wynieść *5*, a skoro *5* również jest długością tego słowa, to takie słowo na pewno jest palindromem.
