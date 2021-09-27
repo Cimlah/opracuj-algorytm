@@ -1,6 +1,6 @@
-# programowanie-lab
+# programowanie-lab - branch 'c++'
 
-To repozytorium służy do nauki języka C++ (w przyszłości możliwe, że HTML). Zawiera ono objaśnienia, analizy kodu, ćwiczenia oraz skrypty i opisy ułatwiające naukę.
+W tym branchu są przechowywane i tworzone projekty/tutoriale napisane w języku C++.
 
 # Zasady współtworzenia
 - Wszelka treść z wyjątkiem bezpośredniego kodu, nazw plików czy katalogów powinna być tworzona w języku polskim. Dozwolone są zrozumiałe informatyczne anglojęzyczne wyrażenia i zwroty.
