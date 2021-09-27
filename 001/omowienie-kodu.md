@@ -53,7 +53,7 @@ int main() {
 Zadanie polega na stwierdzeniu przez program czy wprowadzony przez użytkownika tekst zawiera jakieś cyfry.  
 W tym przykładzie dla odmiany zastosowałem do pobrania tekstu funkcji `getline()`, sprawia ona, że po spacji tekst nadal jest zapisywany do zmiennej.  
 Zastosowałem tutaj pętlę, która sprawdza każdy jeden element `string'a` czy jest on cyfrą.  
-Omówmy teraz warunek w tej pętli: `if(text[i]>='1' && text[i]<='9')`. Jak widzisz, sprawdzam czy element jest większy od *0* i mniejszy od *9*. Ale te cyfry są w cudzysłowach, dlaczego? Dlatego, że zamiast konwertować element na kod ASCII i porównywać czy jest większy od *48* i mniejszy od *57* (w kodzie ASCII), to ja ten element konwertuję ***w locie*** właśnie poprzez umieszczenie cyfr w apostrofach (`' '`), czyli poprzez zadeklarowanie tych wartości jako `char'ów`.
+Omówmy teraz warunek w tej pętli: `if(text[i]>='1' && text[i]<='9')`. Jak widzisz, sprawdzam czy element jest większy lub równy *0* i mniejszy lub równy *9*. Ale te cyfry są w cudzysłowach, dlaczego? Dlatego, że zamiast konwertować element na kod ASCII i porównywać czy jest większy od *48* i mniejszy od *57* (w kodzie ASCII), to ja ten element konwertuję ***w locie*** właśnie poprzez umieszczenie cyfr w apostrofach (`' '`), czyli poprzez zadeklarowanie tych wartości jako `char'ów`.
 
 # Zadanie 3
 
