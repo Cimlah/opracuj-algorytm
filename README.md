@@ -4,7 +4,8 @@ W tym branchu są przechowywane i tworzone projekty/tutoriale napisane w języku
 
 # Opis struktury katalogów
 
-Główne katalogi w tym branchu zawierają projekty/tutoriale, w których jest kod źródłowy i katalogi ze skryptami do kompilowania kodu. Bardzo ważną częścią katalogów projektów są pliki o nazwie *omowienie-kodu.md*, są to pliki zawierające treść z objaśnieniami do zadań i kodów źródłowych
+Główne katalogi w tym branchu zawierają projekty/tutoriale, w których jest kod źródłowy i katalogi ze skryptami do kompilowania kodu. Bardzo ważną częścią katalogów projektów są pliki o nazwie *omowienie-kodu.md*, są to pliki zawierające treść z objaśnieniami do zadań i kodów źródłowych.  
+**Jeżeli chcesz samodzielnie tworzyć kod i jednocześnie mieć łatwy dostęp do wszystkich plików z tego repozytorium, to możesz tworzyć pliki z kodem w katalogu *user-data* w danym katalogu projektu.**
 
 # Zasady współtworzenia
 - Wszelka treść z wyjątkiem bezpośredniego kodu, nazw plików czy katalogów powinna być tworzona w języku polskim. Dozwolone są zrozumiałe informatyczne anglojęzyczne wyrażenia i zwroty.
