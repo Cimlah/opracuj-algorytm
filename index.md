@@ -1,5 +1,7 @@
 # Opracuj Algorytm
 
+![Opracuj Algorytm logo](images/opracuj-algorytm-logo.jpg)
+
 To repozytorium służy do nauki języka C++ (w przyszłości możliwe, że HTML). Zawiera ono objaśnienia, analizy kodu, ćwiczenia oraz skrypty i opisy ułatwiające naukę.  
 **[LINK DO REPOZYTORIUM](https://github.com/Cimlah/opracuj-algorytm)**
 
