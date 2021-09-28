@@ -1,4 +1,4 @@
-# programowanie-lab - branch 'c++'
+# Opracuj Algorytm - branch 'c++'
 
 W tym branchu są przechowywane i tworzone projekty/tutoriale napisane w języku C++.
 
