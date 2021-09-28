@@ -1,5 +1,6 @@
 .vscode
 .DS_Store
 
-# Wykluczenie skompilowanych plików wykonywalnych w projekcie '001'
+# Wykluczenie skompilowanych plików wykonywalnych i plików użytkownika w projekcie '001'
 001/*/z?
+001/user-data/*
