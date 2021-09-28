@@ -1,6 +1,7 @@
-# [Programowanie Lab](https://github.com/Cimlah/programowanie-lab)
+# Programowanie Lab
 
-To repozytorium służy do nauki języka C++ (w przyszłości możliwe, że HTML). Zawiera ono objaśnienia, analizy kodu, ćwiczenia oraz skrypty i opisy ułatwiające naukę.
+To repozytorium służy do nauki języka C++ (w przyszłości możliwe, że HTML). Zawiera ono objaśnienia, analizy kodu, ćwiczenia oraz skrypty i opisy ułatwiające naukę.  
+**[LINK DO REPOZYTORIUM](https://github.com/Cimlah/programowanie-lab)**
 
 # Spis branchów
 
