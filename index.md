@@ -1,11 +1,11 @@
 # Programowanie Lab
 
 To repozytorium służy do nauki języka C++ (w przyszłości możliwe, że HTML). Zawiera ono objaśnienia, analizy kodu, ćwiczenia oraz skrypty i opisy ułatwiające naukę.  
-**[LINK DO REPOZYTORIUM](https://github.com/Cimlah/programowanie-lab)**
+**[LINK DO REPOZYTORIUM](https://github.com/Cimlah/opracuj-algorytm)**
 
 # Spis branchów
 
-1. [c++](https://github.com/Cimlah/programowanie-lab/tree/c++) - projekty/tutoriale o C++
+1. [c++](https://github.com/Cimlah/opracuj-algorytm/tree/c++) - projekty/tutoriale o C++
 
 # Zasady współtworzenia
 - Wszelka treść z wyjątkiem bezpośredniego kodu, nazw plików czy katalogów powinna być tworzona w języku polskim. Dozwolone są zrozumiałe informatyczne anglojęzyczne wyrażenia i zwroty.
