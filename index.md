@@ -1,3 +1,5 @@
+<link rel="shortcut icon" type="image/png" href="images/opracuj-algorytm-logo_1-1proportion.jpg" >
+
 # Opracuj Algorytm
 
 ![Opracuj Algorytm logo](images/opracuj-algorytm-logo.jpg)
