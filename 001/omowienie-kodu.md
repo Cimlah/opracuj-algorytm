@@ -204,3 +204,57 @@ Zadanie polega na stwierdzeniu przez program czy wprowadzony przez użytkownika 
 Ustalam zmienną `temp`, która będzie się równała długości tekstu minus jeden. Dlaczego minus jeden? Bo to się później przyda w pętli do porównywania, a wiadomo, że indeksuje się elementy od zera.  
 `if(text[i]==text[temp]) czy_palindrom++;` jeżeli pierwszy element jest równy ostatniemu, to zwiększ licznik o jeden. W następnym cyklu pętli `i` zostanie zwiększone o jeden, a `temp` zmniejszone o jeden. Dla przykładu weźmy sobie słowo *kaczka*. W pierwszym cyklu pętli zostaną porównane litery: *k* i *a*, w następnym *a* i *k*, w następnym *c* i *z*. Niestety żadna z tych wartości nie jest sobie równa.  
 Wiadomo, że słowo *kajak* jest palindromem, pętla sprawdzi to słowo, na końcu wartość zmiennej `czy_palindrom` powinna wynieść *5*, a skoro *5* również jest długością tego słowa, to takie słowo na pewno jest palindromem.
+
+# Zadanie 7
+
+``` c++
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    string text, slowo="", wspak="";
+
+    cout << "Wprowadź jakiś tekst: ";
+    getline(cin, text);
+    text+=' ';
+    cout << "Palindromy: ";
+
+    for(int i=0; i<text.length(); i++) {
+        if(text[i]==' ') {
+            for(int j=slowo.length()-1; j>=0; j--) {
+                wspak+=slowo[j];
+            }
+
+            if(slowo==wspak) cout << slowo << "; ";
+
+            slowo="";
+            wspak="";
+        }
+        else slowo+=text[i];
+    }
+
+    cout << endl;
+
+    return(0);
+}
+```
+
+Zadanie polega na stwierdzeniu przez program czy wprowadzony przez użytkownika tekst zawiera słowa, które są palindromami.  
+W tym zadaniu, w odróżnieniu do poprzedniego, użyłem trochę innej metody ustalania czy dane słowo jest palindromem.
+
+## Metoda wykrywania palindromu
+Tutaj, gdy program wykryje pojedyncze słowo, to zacznie je zapisywać od tyłu do nowej zmiennej. Następnie porówna oryginalne słowo ze słowem napisanym wspak, jeżeli będą równe, to znaczy, że to słowo jest palindromem. Stąd się wziął fragment kodu:
+
+``` c++
+for(int j=slowo.length()-1; j>=0; j--) {
+                wspak+=slowo[j];
+            }
+
+            if(slowo==wspak) cout << slowo << "; ";
+```
+
+Zmienna `j` przyjmuje wartość długości słowa i zmniejsza się o jeden. Dzięki temu od ostatniego elementu słowa, litery są zapisywane do innej zmiennej.
+
+## Metoda wykrywania słowa
+Skoro mamy już to, to powinniśmy mieć jeszcze jakiś sposób na wykrycie w tekście kiedy kończy się słowo. Oparłem to na wykryciu przez program który ze znaków jest spacją, bo jeżeli jest spacja, to logicznym jest to, że słowo się skończyło. Dlatego w głównej pętli mam warunek: `if(text[i]==' ')`, który jeżeli zostanie spełniony, to zostanie wykonana pętla wspomniana w poprzednim podpunkcie (*Metoda wykrywania palindromu*). Jeżeli w tekście nie zostanie wykryta spacja, to wykona się: `else slowo+=text[i];`. Ten `else` jest potrzebny do tworzenia pojedynczego słowa spośród wielu słów w całym tekście, dodaje on kolejne litery do innej zmiennej.
