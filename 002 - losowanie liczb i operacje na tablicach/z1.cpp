@@ -13,16 +13,16 @@ int main() {
         liczby[i]=rand()%900+100;
     }
 
-    cout << "Liczby w kolejności 1-20: ";
+    cout << "Liczby w kolejności 1-20: " << endl;
 
     for(int i=0; i<20; i++) {
-        cout << i << ". " << liczby[i] << endl;
+        cout << i+1 << ". " << liczby[i] << endl;
     }
 
-    cout << endl << "Liczby w kolejności 20-1: ";
+    cout << endl << "Liczby w kolejności 20-1: " << endl;
 
     for(int i=19; i>=0; i--) {
-        cout << i << ". " << liczby[i] << endl;
+        cout << i+1 << ". " << liczby[i] << endl;
     }
 
     cout << endl;
