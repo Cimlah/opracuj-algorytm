@@ -2,8 +2,8 @@
 .DS_Store
 
 # Wykluczenie skompilowanych plików wykonywalnych i plików użytkownika w projekcie '001'
-001/*/z?
-001/user-data/*
+001\ -\ operacje\ na\ stringach/*/z?
+001\ -\ operacje\ na\ stringach/user-data/*
 
 # Wykluczenie skompilowanych plików wykonywalnych i plików użytkownika w projekcie '002'
 002\ -\ losowanie\ liczb\ i\ operacje\ na\ tablicach/*/z?
