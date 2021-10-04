@@ -4,3 +4,7 @@
 # Wykluczenie skompilowanych plików wykonywalnych i plików użytkownika w projekcie '001'
 001/*/z?
 001/user-data/*
+
+# Wykluczenie skompilowanych plików wykonywalnych i plików użytkownika w projekcie '002'
+002/*/z?
+002/user-data/*
