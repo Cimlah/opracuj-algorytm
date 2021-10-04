@@ -15,7 +15,12 @@ int main() {
         liczby[i]=rand()%900+100;
 
         cout << liczby[i] << "; ";
+    }
 
+    najwiekszy=liczby[0];
+    najmniejszy=liczby[0];
+
+    for(int i=0; i<20; i++) {
         if(liczby[i]>najwiekszy) {
             najwiekszy=liczby[i];
             index_najw=i;
