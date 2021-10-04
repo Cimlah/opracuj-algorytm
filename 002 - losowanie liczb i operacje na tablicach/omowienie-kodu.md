@@ -53,4 +53,4 @@ for(int i=0; i<20; i++) {
     }
 ```
 
-wyświetlamy liczby w kolejności 1-20, czyli zaczynając od pierwszego elementu tablicy, stąd parametry pętli: `for(int i=0; i<20; i++)`. Analogicznie, jeżeli w trzeciej pętli chcę pokazać liczby w odwrotnej kolejności (20-1), to warunek pętli jest następujący: `for(int i=19; i>=0; i--)`. Jedna rzecz mogłaby Cię zastanowić. Dlaczego w środku pętli w przekierowaniu do `cin'a` jest `i+1`? Oczywiście równie dobrze mogłoby być same `i`, ale wtedy wyświetlane liczby byłyby numerowane od *0*.
+wyświetlamy liczby w kolejności 1-20, czyli zaczynając od pierwszego elementu tablicy, stąd parametry pętli: `for(int i=0; i<20; i++)`. Analogicznie, jeżeli w trzeciej pętli chcę pokazać liczby w odwrotnej kolejności (20-1), to warunek pętli jest następujący: `for(int i=19; i>=0; i--)`. Jedna rzecz mogłaby Cię zastanowić. Dlaczego w środku pętli w przekierowaniu do `cout'a` jest `i+1`? Oczywiście równie dobrze mogłoby być same `i`, ale wtedy wyświetlane liczby byłyby numerowane od *0*.
