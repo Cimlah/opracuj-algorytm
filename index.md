@@ -5,31 +5,8 @@
 To repozytorium służy do nauki języka C++ (w przyszłości możliwe, że HTML). Zawiera ono objaśnienia, analizy kodu, ćwiczenia oraz skrypty i opisy ułatwiające naukę.  
 **[LINK DO REPOZYTORIUM](https://github.com/Cimlah/opracuj-algorytm)**
 
-## Przykładowa treść z tego repozytorium:
-
-``` c++
-#include <iostream>
-
-using namespace std;
-
-int main() {
-    string text;
-
-    cout << "Podaj jakis tekst: ";
-    cin >> text;
-
-    if(text[0]==text[text.length()-1]) cout << "Teskt zaczyna i kończy się na tę samą literę";
-    else cout << "Tekst nie zaczyna i nie kończy się na tę samą literę";
-
-    cout << endl;
-
-    return(0);
-}
-```
-
-*Zadanie polega na stwierdzeniu przez program czy wprowadzony przez użytkownika tekst kończy i zaczyna się na tę samą literę.  
-Wykorzystać tu można funkcję `length()`, dzięki której porównamy pierwszy i ostatni element tekstu. Stąd wziął się warunek `if(text[0]==text[text.length()-1])`. Pamiętaj, że tak na prawdę `string` jest tablicą `char'ów`, dlatego można odwołać się do pojedynczego elementu `string'a`, np. poprzez wpisanie: `text[0]`.*  
-**Ten cytat jest częścią pliku [*omowienie-kodu.md*](https://github.com/Cimlah/opracuj-algorytm/blob/2fff43111b1f6318c545909e5a294030fa9d49ae/001/omowienie-kodu.md)**
+# Aktualności
+## Rozpoczęcie pracy nad nowym projektem [`002`](https://github.com/Cimlah/opracuj-algorytm/tree/c%2B%2B/002%20-%20losowanie%20liczb%20i%20operacje%20na%20tablicach)
 
 # Spis branchów
 
